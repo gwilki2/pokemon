@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import Pokedex from '../Pokedex/Pokedex';
+import Pokegame from '../Pokegame/Pokegame';
 import classes from './App.module.scss';
 
 class App extends React.Component {
@@ -9,9 +9,8 @@ class App extends React.Component {
     render() {
         return (
             <div className={classes.App}>
-                <h2>Pokedex Game!</h2>
-                <Pokedex />
-                <Pokedex />
+                <h2>Pokegame!</h2>
+                <Pokegame />
             </div>
         )
     }

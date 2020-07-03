@@ -1,9 +1,57 @@
 .Pokecard {
     display: inline-block;
-    background-color: #777;
-    border: #555 solid 1px;
+    border: #ccc solid 1px;
     box-sizing: border-box;
     margin: 1rem 1vw;
-    border-radius: 5px;
+    border-radius: 2px;
     width: 20vw;
+    box-shadow: 0 10px 7px #333;
+    
+    &:hover {
+        transform: translateY(-10px);
+        transition-duration: 1s;
+        box-shadow: 0 14px 15px #333;;
+
+        img {
+                transform: scale(1.2);
+                transition-duration: 1s;
+            }
+    }
+
+}
+
+
+
+.PokecardImg {
+    max-width: 100%;
+    margin: 10px;
+    background-color: #777;
+    border-radius: 2px;
+    
+    
+    
+    img {
+
+        animation-name: dealPokeImg;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        background-color: transparent;
+        
+        
+    }
+
+}
+
+
+@keyframes dealPokeImg {
+    0% {
+        opacity: 0;
+        transform: translate(-300px, -1000px);
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+
 }
